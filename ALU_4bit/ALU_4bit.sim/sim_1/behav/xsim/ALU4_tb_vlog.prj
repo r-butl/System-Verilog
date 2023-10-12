@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../ALU_4bit.srcs/sources_1/new/ALU4.sv" \
+"../../../../ALU_4bit.srcs/sources_1/new/adder4.sv" \
+"../../../../ALU_4bit.srcs/sources_1/new/divide4.sv" \
+"../../../../ALU_4bit.srcs/sources_1/new/multiply4.sv" \
+"../../../../ALU_4bit.srcs/sources_1/new/subtract4.sv" \
+"../../../../ALU_4bit.srcs/sources_1/new/ALU4_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

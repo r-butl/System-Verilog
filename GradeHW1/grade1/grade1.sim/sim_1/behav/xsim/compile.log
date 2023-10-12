@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lucas/Desktop/fpga/GradeHW1/grade1/grade1.srcs/sources_1/imports/GradeHW1/grade1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lucas/Desktop/fpga/GradeHW1/grade1/grade1.srcs/sources_1/imports/GradeHW1/grade1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lucas/Desktop/fpga/GradeHW1/grade1/grade1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
