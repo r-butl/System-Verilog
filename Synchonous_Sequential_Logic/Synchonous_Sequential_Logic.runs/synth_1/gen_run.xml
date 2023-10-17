@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1697517398">
-  <File Type="VDS-TIMINGSUMMARY" Name="sequence_detector_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="sequence_detector.dcp"/>
   <File Type="RDS-UTIL-PB" Name="sequence_detector_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="sequence_detector_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="sequence_detector_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="sequence_detector.vds"/>
-  <File Type="REPORTS-TCL" Name="sequence_detector_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="sequence_detector_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="sequence_detector.tcl"/>
+  <File Type="RDS-UTIL" Name="sequence_detector_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sequence_detector_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sequence_detector.vds"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/sequence_detector.sv">
@@ -68,9 +65,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
