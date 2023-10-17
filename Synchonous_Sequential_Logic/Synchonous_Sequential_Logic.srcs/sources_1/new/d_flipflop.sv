@@ -21,6 +21,21 @@
 
 
 module d_flipflop(
-
+    input logic     clk, d, rst,
+    output logic    q, q_not
     );
+    
+    
+    logic q_pass;
+    
+    always_ff @(posedge  clk or posedge rst) 
+        begin
+            if (rst == 1'b1)    q<=1'b0;
+            else                q<=d;   
+        end
+        
+    assign q_pass = ~q;
+    assign q_not = q_pass;
+
+        
 endmodule
