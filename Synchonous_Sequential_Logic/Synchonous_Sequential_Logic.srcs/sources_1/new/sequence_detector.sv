@@ -29,7 +29,7 @@ module sequence_detector(
    statetype state = S0, nextstate;
        
    // State Register
-   always_ff @ (posedge clk)    // Edge triggered
+   always_ff @ (posedge clk or posedge reset)    // Edge triggered
         if(reset)       state <= S0;
         else            state <= nextstate;
    
