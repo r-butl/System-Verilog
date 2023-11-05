@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Synchonous_Sequential_Logic.srcs/sources_1/new/d_flipflop.sv" \
+"../../../../Synchonous_Sequential_Logic.srcs/sources_1/new/sequence_detector.sv" \
+"../../../../Synchonous_Sequential_Logic.srcs/sources_1/new/sequence_detector_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

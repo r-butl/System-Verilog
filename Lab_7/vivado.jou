@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Oct 30 23:31:15 2023
+# Process ID: 49828
+# Current directory: /home/lucas/Desktop/fpga/Lab_7
+# Command line: vivado Synchonous_Sequential_Logic.
+# Log file: /home/lucas/Desktop/fpga/Lab_7/vivado.log
+# Journal file: /home/lucas/Desktop/fpga/Lab_7/vivado.jou
+# Running On: acomputer, OS: Linux, CPU Frequency: 4314.576 MHz, CPU Physical cores: 8, Host memory: 16446 MB
+#-----------------------------------------------------------
+start_gui
+create_project Lab_7 . -part xc7k70tfbv676-1
+file mkdir /home/lucas/Desktop/fpga/Lab_7/Lab_7.srcs/sources_1/new
+close [ open /home/lucas/Desktop/fpga/Lab_7/Lab_7.srcs/sources_1/new/sequential_circuit.sv w ]
+add_files /home/lucas/Desktop/fpga/Lab_7/Lab_7.srcs/sources_1/new/sequential_circuit.sv
+update_compile_order -fileset sources_1
+close [ open /home/lucas/Desktop/fpga/Lab_7/Lab_7.srcs/sources_1/new/sequential_circuit_tb.sv w ]
+add_files /home/lucas/Desktop/fpga/Lab_7/Lab_7.srcs/sources_1/new/sequential_circuit_tb.sv
+update_compile_order -fileset sources_1
+launch_simulation
+source sequential_circuit.tcl
+close_sim
+launch_simulation
+source sequential_circuit.tcl
+launch_simulation
+source sequential_circuit_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+close_sim
